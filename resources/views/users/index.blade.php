@@ -37,7 +37,14 @@
                                         <th scope="row">{{ $user->id }}</th>
                                         <td>{{$user->username}}</td>
                                         <td>{{$user->email}}</td>
-                                        <td>editer/supprimer</td>
+                                        <td>
+                                            <a href="{{ route('users.edit', $user->id) }}" class="btn btn-sm btn-primary shadow-sm">
+                                                <i class="fa fa-edit fa-sm text-white-50"></i>
+                                            </a>
+                                            <a href="" class="btn btn-sm btn-danger shadow-sm">
+                                                <i class="fa fa-trash fa-sm text-white-50"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                 @endforeach
                             </tbody>
