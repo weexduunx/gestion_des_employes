@@ -14,6 +14,13 @@
                     <h6 class="m-0 font-weight-bold text-primary">Liste des utilisateurs</h6>
                 </div>
                 <div class="card-body">
+                    <div>
+                        @if (session()->has('message'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <i class="fa fa-check-circle"></i> {{ session('message') }}
+                        </div>
+                        @endif
+                    </div>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
