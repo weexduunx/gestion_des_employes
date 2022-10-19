@@ -11,14 +11,13 @@
         </div>
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Formulaire</h6>
+                <h6 class="m-0 font-weight-bold text-primary">{{ __('Formulaire d\'ajout') }}</h6>
             </div>
             <div class="card-body">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
                             <div class="card">
-                                <div class="card-header">{{ __('Register') }}</div>
 
                                 <div class="card-body">
                                     <form method="POST" action="{{ route('users.store') }}">
@@ -120,8 +119,9 @@
 
                                         <div class="row mb-0">
                                             <div class="col-md-6 offset-md-4">
-                                                <button type="submit" class="btn btn-primary">
-                                                    {{ __('Register') }}
+                                                <button type="submit" class="btn btn-sm btn-primary shadow-sm">
+                                                    <i class="fa-solid fa-add fa-sm text-white-50"></i>
+                                                    {{ __('Ajouter') }}
                                                 </button>
                                             </div>
                                         </div>

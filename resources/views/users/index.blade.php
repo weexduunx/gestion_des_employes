@@ -38,7 +38,7 @@
                                         <td>{{$user->username}}</td>
                                         <td>{{$user->email}}</td>
                                         <td>
-                                            <a href="{{ route('users.edit', $user->id) }}" class="btn btn-sm btn-primary shadow-sm">
+                                            <a href="{{ route('users.edit', $user->id) }}" class="btn btn-sm btn-secondary shadow-sm">
                                                 <i class="fa fa-edit fa-sm text-white-50"></i>
                                             </a>
                                             <a href="" class="btn btn-sm btn-danger shadow-sm">
@@ -50,7 +50,6 @@
                             </tbody>
                           </table>
                     </div>
-                    
                 </div>
             </div>
         </div>

@@ -1,7 +1,8 @@
 <?php
-
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Backend\UserController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
